@@ -14,8 +14,8 @@ $user_agent = $_SERVER['HTTP_USER_AGENT'];
 // The message to send
 $message = array(
     "text" => "Source IP: " . $source_ip . "\nPublic IP: " . $public_ip . "\nUser Agent: " . $user_agent,
-    "title" => "PHP message",
-    "summary" => "This is a summary of the message",
+    "title" => "Intruder Detected!",
+    "summary" => "An HTTP tripware was set off.",
 );
 
 // Convert the message to JSON format

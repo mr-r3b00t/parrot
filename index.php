@@ -23,6 +23,7 @@ $agent = $_SERVER['HTTP_USER_AGENT'];
   // Slack Message
 $txtstr = ('Intruder Alert: ');
 $txt = ($txtstr . strval($ip) . ' Client IP:' . $cip . ' USER AGENT: ' . $agent);
+$txt = htmlspecialchars($txt, ENT_QUOTES, 'UTF-8');
   $message = array('payload' => json_encode(array('text' => $txt)));
   // Use curl
   $c = curl_init(SLACK_WEBHOOK);

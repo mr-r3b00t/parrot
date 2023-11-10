@@ -11,7 +11,7 @@ rm /var/www/html/index.html
 sudo rm /var/www/html/index.html
 wget https://raw.githubusercontent.com/mr-r3b00t/parrot/main/poc/poc.php
 sudo cp poc.php /var/www/html/index.php
-sudo apt install php7.4-curl
+sudo apt install php8.1-curl
 sudo service apache2 restart
 
 #Remember to add the right webhook URL into the PHP
